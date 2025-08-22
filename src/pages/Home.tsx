@@ -18,7 +18,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              igenielabs empowers organizations with cutting-edge AI solutions, 
+              iGenie Labs empowers organizations with cutting-edge AI solutions, 
               strategic advisory services, and rapid product development to drive 
               digital transformation and accelerate growth.
             </p>
@@ -44,7 +44,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose igenielabs?
+              Why Choose iGenie Labs?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We combine deep technical expertise with strategic vision to deliver 
