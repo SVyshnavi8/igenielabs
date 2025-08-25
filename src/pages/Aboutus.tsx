@@ -8,12 +8,12 @@ const AboutUs = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
           About{" "}
           <span className="bg-gradient-primary bg-clip-text text-transparent">
-            iGenieLabs
+            iGenie Labs
           </span>
         </h1>
 
         <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
-          At iGenieLabs, we are passionate about helping organizations embrace
+          At iGenie Labs, we are passionate about helping organizations embrace
           the future with AI-driven innovation and digital transformation. Our
           mission is to empower businesses with cutting-edge solutions,
           strategic advisory, and rapid product development to unlock new growth
