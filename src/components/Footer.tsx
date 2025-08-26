@@ -8,9 +8,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h2 className="text-2xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-              iGenieLabs
-            </h2>
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <img
+                src="src/assets/logo.png"
+                alt="iGenieLabs logo"
+                className="h-16 w-auto"
+              />
+              
+            </Link>
             <p className="text-muted-foreground">
               Empowering organizations with AI innovation, strategic advisory,
               and rapid product development to accelerate digital transformation.
