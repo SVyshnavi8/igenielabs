@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png"; // ✅ Import instead of direct path
 
 const Footer = () => {
   return (
@@ -10,11 +11,10 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img
-                src="src/assets/logo.png"
-                alt="iGenieLabs logo"
+                src={logo} // ✅ use imported logo
+                alt="iGenieLabs"
                 className="h-16 w-auto"
               />
-              
             </Link>
             <p className="text-muted-foreground">
               Empowering organizations with AI innovation, strategic advisory,

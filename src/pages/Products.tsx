@@ -1,46 +1,50 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Music, Workflow, ArrowRight } from "lucide-react";
+import { MapPin, Music, Workflow } from "lucide-react";
+import { Link } from "react-router-dom";   // 👈 import Link
 
 const Products = () => {
   const products = [
     {
       icon: MapPin,
       title: "Travel Genie",
-      description: "Intelligent travel planning powered by AI to create personalized itineraries, find the best deals, and optimize your journey from start to finish.",
+      description:
+        "Intelligent travel planning powered by AI to create personalized itineraries, find the best deals, and optimize your journey from start to finish.",
       features: [
         "Smart itinerary generation",
         "Real-time price optimization",
         "Personalized recommendations",
-        "Multi-language support"
-      ]
+        "Multi-language support",
+      ],
     },
     {
       icon: Music,
       title: "Audio Genie",
-      description: "Revolutionary audio management system that uses AI to organize, categorize, and enhance your audio content with intelligent search and discovery.",
+      description:
+        "Revolutionary audio management system that uses AI to organize, categorize, and enhance your audio content with intelligent search and discovery.",
       features: [
         "Automated audio categorization",
         "AI-powered search",
         "Quality enhancement",
-        "Smart playlist creation"
-      ]
+        "Smart playlist creation",
+      ],
     },
     {
       icon: Workflow,
       title: "Genie Workflow",
-      description: "Streamline your business processes with AI-driven workflow automation that learns from your patterns and optimizes operations in real-time.",
+      description:
+        "Streamline your business processes with AI-driven workflow automation that learns from your patterns and optimizes operations in real-time.",
       features: [
         "Process automation",
         "Intelligent routing",
         "Performance analytics",
-        "Custom integrations"
-      ]
-    }
+        "Custom integrations",
+      ],
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <div className="min-h-screen bg-background pt-28">
       {/* Header Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
@@ -51,8 +55,8 @@ const Products = () => {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover our suite of innovative AI applications designed to transform 
-            how you work, travel, and manage digital content.
+            Discover our suite of innovative AI applications designed to
+            transform how you work, travel, and manage digital content.
           </p>
         </div>
       </section>
@@ -62,8 +66,8 @@ const Products = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 group"
               >
                 <CardHeader className="pb-4">
@@ -73,29 +77,28 @@ const Products = () => {
                     </div>
                   </div>
                   <CardTitle className="text-2xl mb-2">{product.title}</CardTitle>
-                  <CardDescription className="text-base">
+                  {/* ✅ description same size as features */}
+                  <p className="text-md text-muted-foreground">
                     {product.description}
-                  </CardDescription>
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <h4 className="font-semibold mb-3 text-foreground">Key Features:</h4>
+                    <h4 className="font-semibold mb-3 text-foreground text-md">
+                      Key Features:
+                    </h4>
                     <ul className="space-y-2">
                       {product.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0" />
+                        <li
+                          key={featureIndex}
+                          className="flex items-center text-sm text-muted-foreground"
+                        >
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
                     </ul>
                   </div>
-                 <Button 
-                    className="w-full group-hover:shadow-glow transition-all duration-300"
-                    variant="outline"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button> 
                 </CardContent>
               </Card>
             ))}
@@ -110,11 +113,16 @@ const Products = () => {
             Ready to Experience Our AI Solutions?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Contact us to learn more about our products and how they can transform your business.
+            Contact us to learn more about our products and how they can
+            transform your business.
           </p>
-          <Button size="lg" className="shadow-glow">
-            Request Demo
-          </Button>
+
+          {/* 👇 Wrap button with Link */}
+          <Link to="/contact">
+            <Button size="lg" className="shadow-glow">
+              Request Demo
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Database, Globe, Wrench, Rocket, Brain, ArrowRight } from "lucide-react";
+import { Database, Globe, Wrench, Rocket, Brain } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -8,62 +8,67 @@ const Services = () => {
     {
       icon: Database,
       title: "Data Advisory",
-      description: "Strategic guidance on data architecture, governance, and analytics to unlock the full potential of your data assets.",
+      description:
+        "Strategic guidance on data architecture, governance, and analytics to unlock the full potential of your data assets.",
       offerings: [
         "Data strategy development",
         "Architecture design",
         "Governance frameworks",
-        "Analytics implementation"
-      ]
+        "Analytics implementation",
+      ],
     },
     {
       icon: Globe,
       title: "Digital Advisory",
-      description: "Comprehensive digital transformation consulting to modernize your technology stack and business processes.",
+      description:
+        "Comprehensive digital transformation consulting to modernize your technology stack and business processes.",
       offerings: [
         "Digital transformation roadmap",
         "Technology assessment",
         "Process optimization",
-        "Change management"
-      ]
+        "Change management",
+      ],
     },
     {
       icon: Wrench,
       title: "Product Engineering Advisor",
-      description: "Expert guidance on product development best practices, architecture decisions, and engineering excellence.",
+      description:
+        "Expert guidance on product development best practices, architecture decisions, and engineering excellence.",
       offerings: [
         "Technical architecture review",
         "Development process optimization",
         "Code quality assessment",
-        "Team mentoring"
-      ]
+        "Team mentoring",
+      ],
     },
     {
       icon: Rocket,
       title: "Rapid Release Management",
-      description: "Accelerate your software delivery with optimized CI/CD pipelines and release automation strategies.",
+      description:
+        "Accelerate your software delivery with optimized CI/CD pipelines and release automation strategies.",
       offerings: [
         "CI/CD pipeline setup",
         "Deployment automation",
         "Release strategy planning",
-        "DevOps optimization"
-      ]
+        "DevOps optimization",
+      ],
     },
     {
       icon: Brain,
       title: "AI Advisor",
-      description: "Navigate the AI landscape with expert guidance on implementation, ethics, and strategic AI adoption.",
+      description:
+        "Navigate the AI landscape with expert guidance on implementation, ethics, and strategic AI adoption.",
       offerings: [
         "AI strategy development",
         "Implementation roadmap",
         "Ethics and compliance",
-        "Model selection and training"
-      ]
-    }
+        "Model selection and training",
+      ],
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <div className="min-h-screen bg-background pt-28">
       {/* Header Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
@@ -74,8 +79,9 @@ const Services = () => {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Partner with our experts to accelerate your digital transformation journey 
-            with strategic guidance and hands-on support across technology, data, and AI.
+            Partner with our experts to accelerate your digital transformation
+            journey with strategic guidance and hands-on support across
+            technology, data, and AI.
           </p>
         </div>
       </section>
@@ -85,8 +91,8 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 group"
               >
                 <CardHeader className="pb-4">
@@ -96,25 +102,28 @@ const Services = () => {
                     </div>
                   </div>
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-sm">
+                  {/* ✅ Description now matches offerings size */}
+                  <p className="text-md text-muted-foreground">
                     {service.description}
-                  </CardDescription>
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <div className="mb-6">
-                    <h4 className="font-semibold mb-3 text-foreground text-sm">What We Offer:</h4>
+                    <h4 className="font-semibold mb-3 text-foreground text-md">
+                      What We Offer:
+                    </h4>
                     <ul className="space-y-2">
                       {service.offerings.map((offering, offeringIndex) => (
-                        <li key={offeringIndex} className="flex items-center text-xs text-muted-foreground">
+                        <li
+                          key={offeringIndex}
+                          className="flex items-center text-sm text-muted-foreground"
+                        >
                           <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
                           {offering}
                         </li>
                       ))}
                     </ul>
                   </div>
-                  {/* 👇 Updated button wrapped in Link */}
-                 
-
                 </CardContent>
               </Card>
             ))}
@@ -130,16 +139,33 @@ const Services = () => {
               Our Advisory Process
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A structured approach to delivering maximum value and measurable results.
+              A structured approach to delivering maximum value and measurable
+              results.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Assessment", desc: "Comprehensive analysis of your current state" },
-              { step: "02", title: "Strategy", desc: "Custom roadmap aligned with your goals" },
-              { step: "03", title: "Implementation", desc: "Hands-on support and execution" },
-              { step: "04", title: "Optimization", desc: "Continuous improvement and refinement" }
+              {
+                step: "01",
+                title: "Assessment",
+                desc: "Comprehensive analysis of your current state",
+              },
+              {
+                step: "02",
+                title: "Strategy",
+                desc: "Custom roadmap aligned with your goals",
+              },
+              {
+                step: "03",
+                title: "Implementation",
+                desc: "Hands-on support and execution",
+              },
+              {
+                step: "04",
+                title: "Optimization",
+                desc: "Continuous improvement and refinement",
+              },
             ].map((phase, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
@@ -160,11 +186,14 @@ const Services = () => {
             Ready to Accelerate Your Transformation?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss your challenges and create a custom solution that drives real results.
+            Let's discuss your challenges and create a custom solution that
+            drives real results.
           </p>
-          <Button size="lg" className="shadow-glow">
-            Schedule Consultation
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="shadow-glow">
+              Request Demo
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

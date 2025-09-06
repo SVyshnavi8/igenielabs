@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import useScrollFade from "@/hooks/useScrollFade";
+import ExpertiseTabs from "@/components/ExpertiseTabs"; // 👈 import the new component
 
 // 👇 Import icons from lucide-react
 import { BarChart3, Database, Cloud } from "lucide-react";
@@ -16,7 +17,10 @@ const StrategyAdvisory = () => {
   const fadeButton = useScrollFade(1000);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
+      {/* 👇 Tabs Section */}
+      <ExpertiseTabs />
+
       {/* Hero Section */}
       <h1
         ref={fadeHeading.ref}

@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-background py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-background pt-28">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">

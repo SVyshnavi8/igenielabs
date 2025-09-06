@@ -1,0 +1,72 @@
+<img
+              src={logo}
+              alt="iGenie Labs Logo"
+              className="h-16 md:h-17 w-auto transition-transform duration-300 hover:scale-105"
+            />
+
+
+-------------
+<img
+          src={logo}
+          alt="iGenie Labs"
+          className="h-[var(--logo-size,4rem)] w-auto transition-transform duration-300 hover:scale-105"
+          />
+
+--------------------- Section of home.tsx:
+<section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-hero opacity-50" />
+        <div className="relative max-w-7xl mx-auto text-center">
+          <div className="mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Transforming Business with{" "}
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                AI Innovation
+              </span>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              iGenie Labs empowers organizations with cutting-edge AI solutions,
+              strategic advisory services, and rapid product development to drive
+              digital transformation and accelerate growth.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/products">
+                <Button size="lg" className="group">
+                  Explore Products
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button variant="outline" size="lg">
+                  Our Services
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+-----------------------
+{/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))} (Content for Navigation menu size)
+--------------
+1. LinkedIn page ->Account created -> Page to be created
+2. Title bar -> iGenie Labs -> Done
+3. About Us page ->Nav bar bottom ->Done
+4. Logo in Mobile along with menu items
+5. Services page-> Increase content change
+6. Products page -> Bullet content shall match top intro text, remove Learn More
+7. Check footer logo
+8. Check alignments of all the pages ->Done
+9. Make common representation of iGenie Labs in all pages ->Done
+10. Internal pages -> Tabs for advisory services ->Done
+11. Remove Learn More-> Done
