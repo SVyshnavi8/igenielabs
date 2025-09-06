@@ -23,10 +23,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-          <img
+            <img
               src={logo}
               alt="iGenie Labs"
-              className="h-12 md:h-36 w-auto transition-transform duration-300 hover:scale-105"
+              className="h-16 md:h-36 w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
 
@@ -70,8 +70,10 @@ const Navigation = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                  className={`text-base font-medium transition-colors hover:text-primary ${
+                    isActive(item.path)
+                      ? "text-primary"
+                      : "text-muted-foreground"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
