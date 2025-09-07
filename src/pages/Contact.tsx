@@ -6,15 +6,14 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-          Get in{" "}
+          Accelerate with{" "}
           <span className="bg-gradient-primary bg-clip-text text-transparent">
-            Touch
+            AI
           </span>
         </h1>
 
         <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
-          Reach out to us through any of the following channels. 
-          We’d love to hear from you!
+          We’d love to connect and explore your AI journey.
         </p>
 
         {/* Layout with Cards + Map */}

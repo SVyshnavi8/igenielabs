@@ -9,60 +9,60 @@ const Services = () => {
       icon: Database,
       title: "Data Advisory",
       description:
-        "Strategic guidance on data architecture, governance, and analytics to unlock the full potential of your data assets.",
+        "Build an AI-ready data foundation. From governance to real-time analytics, we design strategies that unlock insights and fuel intelligence across the enterprise.",
       offerings: [
-        "Data strategy development",
-        "Architecture design",
-        "Governance frameworks",
-        "Analytics implementation",
+        "AI-ready data strategy",
+        "Intelligent architecture design",
+        "Governance frameworks for trust",
+        "Analytics for business impact",
       ],
     },
     {
       icon: Globe,
       title: "Digital Advisory",
       description:
-        "Comprehensive digital transformation consulting to modernize your technology stack and business processes.",
+        "Redefine digital through AI. We guide modernization of platforms and processes so that every transformation step is powered by intelligence, not just technology.",
       offerings: [
-        "Digital transformation roadmap",
-        "Technology assessment",
-        "Process optimization",
-        "Change management",
+        "AI-infused transformation roadmaps",
+        "Technology modernization assessments",
+        "Process automation & optimization",
+        "Change adoption at scale",
       ],
     },
     {
       icon: Wrench,
       title: "Product Engineering Advisor",
       description:
-        "Expert guidance on product development best practices, architecture decisions, and engineering excellence.",
+        "Engineer products with AI at the core. From architecture to agile practices, we ensure engineering excellence that accelerates innovation and market impact.",
       offerings: [
-        "Technical architecture review",
-        "Development process optimization",
-        "Code quality assessment",
-        "Team mentoring",
+        "AI-first architecture reviews",
+        "Development acceleration strategies",
+        "Code & quality audits",
+        "Team enablement for AI adoption",
       ],
     },
     {
       icon: Rocket,
       title: "Rapid Release Management",
       description:
-        "Accelerate your software delivery with optimized CI/CD pipelines and release automation strategies.",
+        "Deliver AI-powered software at speed. We optimize release pipelines with automation and intelligence to achieve faster, safer, and smarter deployments.",
       offerings: [
-        "CI/CD pipeline setup",
-        "Deployment automation",
-        "Release strategy planning",
-        "DevOps optimization",
+        "Intelligent CI/CD pipelines",
+        "Automated deployment orchestration",
+        "AI-enhanced release strategies",
+        "DevOps with continuous learning",
       ],
     },
     {
       icon: Brain,
       title: "AI Advisor",
       description:
-        "Navigate the AI landscape with expert guidance on implementation, ethics, and strategic AI adoption.",
+        "Your trusted partner in AI adoption. From ethical frameworks to model deployment, we design strategies that ensure AI drives sustainable value at scale.",
       offerings: [
-        "AI strategy development",
-        "Implementation roadmap",
-        "Ethics and compliance",
-        "Model selection and training",
+        "AI-first business strategy",
+        "Implementation & scaling roadmap",
+        "Responsible AI & compliance",
+        "Model selection, training & tuning",
       ],
     },
   ];
@@ -73,15 +73,15 @@ const Services = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Advisory{" "}
+            AI-First{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Services
+              Advisory Services
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Partner with our experts to accelerate your digital transformation
-            journey with strategic guidance and hands-on support across
-            technology, data, and AI.
+            We help organizations embed AI into the heart of their strategy, data, and technology. 
+            From vision to execution, our experts co-create solutions that accelerate transformation 
+            and deliver measurable outcomes.
           </p>
         </div>
       </section>
@@ -139,8 +139,7 @@ const Services = () => {
               Our Advisory Process
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A structured approach to delivering maximum value and measurable
-              results.
+              Our advisory process is iterative, AI-driven, and outcome-focused — ensuring every engagement creates measurable impact.
             </p>
           </div>
 
@@ -148,23 +147,23 @@ const Services = () => {
             {[
               {
                 step: "01",
-                title: "Assessment",
-                desc: "Comprehensive analysis of your current state",
+                title: "Discover",
+                desc: "Assess current state and opportunities for AI infusion",
               },
               {
                 step: "02",
-                title: "Strategy",
-                desc: "Custom roadmap aligned with your goals",
+                title: "Design",
+                desc: "Craft AI-first roadmaps aligned with vision & outcomes",
               },
               {
                 step: "03",
-                title: "Implementation",
-                desc: "Hands-on support and execution",
+                title: "Deploy",
+                desc: "Execute with hands-on AI, data, and digital expertise",
               },
               {
                 step: "04",
-                title: "Optimization",
-                desc: "Continuous improvement and refinement",
+                title: "Evolve",
+                desc: "Continuously optimize with learning systems and feedback loops",
               },
             ].map((phase, index) => (
               <div key={index} className="text-center">
@@ -183,15 +182,14 @@ const Services = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Accelerate Your Transformation?
+            Ready to Lead with AI?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss your challenges and create a custom solution that
-            drives real results.
+            From strategy to execution, we co-create AI-first solutions that future-proof your business and accelerate growth.
           </p>
           <Link to="/contact">
             <Button size="lg" className="shadow-glow">
-              Request Demo
+              Start Your AI Journey
             </Button>
           </Link>
         </div>

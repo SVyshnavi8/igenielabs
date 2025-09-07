@@ -11,38 +11,38 @@ const DifferentiateAI = () => {
 
       {/* Header */}
       <h1 className="text-4xl font-bold text-center mb-6 bg-gradient-primary bg-clip-text text-transparent">
-        Transform ideas into intelligent products with AI/ML
+        Differentiate with AI/ML at the Core
       </h1>
 
       <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
-        AI isn’t just about algorithms — it’s about differentiation. At iGenieLabs, we help design, build, and scale AI solutions that create tangible business impact.
+        We don’t just implement models — we help you create competitive advantage by embedding intelligence into products, platforms, and decisions.
       </p>
 
       {/* Cards */}
       <div className="grid md:grid-cols-3 gap-6">
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Data Science</h3>
+            <h3 className="text-xl font-semibold mb-2">Data Science for Competitive Intelligence</h3>
             <p className="text-muted-foreground">
-              Unlock patterns, predictions, and recommendations through advanced statistical and ML modeling.
+              Transform raw data into intelligence. We build advanced models that uncover hidden patterns, deliver predictive power, and personalize decisions at scale.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">AI Engineering</h3>
+            <h3 className="text-xl font-semibold mb-2">Engineer AI for Scale & Trust</h3>
             <p className="text-muted-foreground">
-              Develop production-grade AI systems with scalable deployment, monitoring, and governance.
+              Move from prototype to production with confidence. We design, deploy, and monitor enterprise-grade AI systems with built-in reliability, governance, and ethical safeguards.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">ML Products & Platforms</h3>
+            <h3 className="text-xl font-semibold mb-2">Scale Innovation with ML Products & Platforms</h3>
             <p className="text-muted-foreground">
-              Create reusable AI modules, APIs, and platforms that accelerate innovation across the enterprise.
+              Accelerate enterprise-wide AI adoption through reusable modules, APIs, and platforms that democratize access to intelligence.
             </p>
           </CardContent>
         </Card>

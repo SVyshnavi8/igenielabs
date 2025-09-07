@@ -69,3 +69,22 @@
 8. Check alignments of all the pages ->Done
 9. Make common representation of iGenie Labs in all pages ->Done
 10. Internal pages -> Tabs for advisory services ->Done
+
+------------------ 07/09/2025
+1. Make bullet points in Our core values
+2. Strategy page -> add bullets, change icons for new additions, 
+3. Increase space between two lines in strategy page
+4. Heading need to set correctly without characters cut
+5. Add Meta
+   META INFO:  HOME-----> Meta / SEO Enhancements: Replace generic description with:
+“iGenie Labs is an AI-first innovation company helping enterprises build intelligent products, scale data platforms, and accelerate growth with AI/ML and automation.”
+ 
+PRODUCTS------> SEO / Meta Updates: Title: AI Products | iGenie Labs – Travel, Audio & Workflow Innovation
+Description: “Explore iGenie Labs’ AI-first products — Travel Genie, Audio Genie, and Workflow Genie. Built with AI at the core to redefine travel, audio, and business workflows.”
+ 
+SERVICES -------> SEO / Meta Update:Title: AI Advisory Services | iGenie Labs – Data, Digital, Engineering & AI Strategy
+Description: “Explore iGenie Labs’ AI-first advisory services: Data, Digital, Product Engineering, Rapid Release, and AI Advisory. Embedding AI at the core to accelerate transformation.”
+ 
+ABOUT -----> SEO / Meta Description Update:“iGenie Labs is an AI-first innovation company helping enterprises build intelligent products, scale data platforms, and accelerate digital transformation with measurable outcomes.”
+6.Add Pictures
+7.Create LinkedIn page

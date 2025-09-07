@@ -8,32 +8,28 @@ const AboutUs = () => {
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-            About{" "}
+            About iGenie Labs:{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              iGenie Labs
+              AI at the Core of Everything We Do
             </span>
           </h1>
 
           <p className="text-lg text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
-            At iGenie Labs, we are passionate about helping organizations
-            embrace the future with AI-driven innovation and digital
-            transformation. Our mission is to empower businesses with
-            cutting-edge solutions, strategic advisory, and rapid product
-            development to unlock new growth opportunities.
+            We believe the future belongs to AI-first enterprises. Our mission is to help organizations 
+            reimagine strategy, data, and products by embedding intelligence at the foundation — 
+            creating growth, resilience, and impact at scale.
           </p>
         </div>
       </section>
 
       {/* Vision & Approach */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
           <Card className="shadow-card border-border bg-gradient-card">
             <CardContent className="p-8">
               <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
               <p className="text-muted-foreground">
-                To be a global leader in AI innovation and digital
-                transformation, enabling businesses of all sizes to thrive in
-                the new era of technology.
+                To lead the AI-first movement worldwide — empowering enterprises of all sizes to transform products, processes, and customer experiences through intelligence at scale.
               </p>
             </CardContent>
           </Card>
@@ -42,22 +38,30 @@ const AboutUs = () => {
             <CardContent className="p-8">
               <h2 className="text-2xl font-semibold mb-4">Our Approach</h2>
               <p className="text-muted-foreground">
-                We combine deep technical expertise, strategic advisory, and
-                agile execution to deliver tailored solutions that create real
-                business value.
+                We combine strategy, data, and engineering with an AI-first mindset. Every engagement starts with intelligence at the core — delivering tailored solutions that move fast, scale seamlessly, and drive measurable value.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="shadow-card border-border bg-gradient-card">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-semibold mb-4">Core Values</h2>
+              <p className="text-muted-foreground">
+                AI-First by Design → Intelligence is the foundation, not an add-on.
+                Speed with Purpose → Fast delivery, measurable outcomes.
+                Responsible AI → Ethical, transparent, and compliant innovation.
+                Partnership for Growth → Co-creating solutions with our clients.
               </p>
             </CardContent>
           </Card>
         </div>
       </section>
-
+     
       {/* Team Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our diverse team of innovators, strategists, and engineers is
-            dedicated to shaping the future of AI and digital transformation.
+            Our team of AI innovators, product leaders, and technologists brings together expertise in data, machine learning, engineering, and operations. Together, we are shaping the future of AI adoption — responsibly, strategically, and at scale.
           </p>
         </div>
 
@@ -106,6 +110,15 @@ const AboutUs = () => {
               <p className="text-muted-foreground">US Operations</p>
             </CardContent>
           </Card>
+        </div>
+        <div className="text-center mb-12">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          </p>
+        </div>
+        <div className="text-center mb-12">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            With decades of combined experience across AI, data platforms, and enterprise transformation, our leadership team ensures every client engagement is outcome-driven and future-ready.
+          </p>
         </div>
       </section>
     </div>

@@ -27,7 +27,7 @@ const StrategyAdvisory = () => {
         style={fadeHeading.style}
         className="text-4xl font-bold text-center mb-6 bg-gradient-primary bg-clip-text text-transparent"
       >
-        Unlock business value through data-driven strategy
+        AI-First Capabilities to Power Intelligent Enterprises
       </h1>
 
       <p
@@ -35,10 +35,7 @@ const StrategyAdvisory = () => {
         style={fadeSub.style}
         className="text-center text-muted-foreground max-w-3xl mx-auto mb-12"
       >
-        At iGenieLabs, we help organizations define where and how data, AI, and
-        analytics can deliver real impact. Our advisory services align
-        technology choices with business priorities, ensuring measurable value
-        at every stage.
+        From data to platforms, our capabilities are built AI-first — enabling you to design, build, and scale intelligent ecosystems that deliver measurable business outcomes.
       </p>
 
       {/* Cards with Icons */}
@@ -48,8 +45,7 @@ const StrategyAdvisory = () => {
             <BarChart3 className="w-12 h-12 mx-auto mb-4 text-blue-600 animate-bounce" />
             <h3 className="text-xl font-semibold mb-2">Analytics Roadmap</h3>
             <p className="text-muted-foreground">
-              Craft a phased roadmap for AI and analytics adoption — from quick
-              wins to enterprise-wide transformation.
+              Chart your AI journey with clarity and confidence. We design phased adoption roadmaps that align vision, use cases, and value creation.
             </p>
           </CardContent>
         </Card>
@@ -59,8 +55,7 @@ const StrategyAdvisory = () => {
             <Database className="w-12 h-12 mx-auto mb-4 text-green-600 animate-pulse" />
             <h3 className="text-xl font-semibold mb-2">Data Strategy</h3>
             <p className="text-muted-foreground">
-              Establish a trusted data foundation with governance,
-              accessibility, and scalability at the core.
+              Build an AI-quality data foundation. From governance to real-time pipelines, we make your data trustworthy, scalable, and ready for intelligence.
             </p>
           </CardContent>
         </Card>
@@ -70,9 +65,26 @@ const StrategyAdvisory = () => {
             <Cloud className="w-12 h-12 mx-auto mb-4 text-purple-600 animate-spin-slow" />
             <h3 className="text-xl font-semibold mb-2">Platform Strategy</h3>
             <p className="text-muted-foreground">
-              Design technology ecosystems that are flexible, cloud-ready, and
-              optimized for AI/ML workloads.
+              Design AI-native platforms. We create scalable, cloud-agnostic ecosystems optimized for model training, deployment, and continuous learning.
             </p>
+          </CardContent>
+        </Card>
+
+        <Card ref={fadeCard3.ref} style={fadeCard3.style}>
+          <CardContent className="p-6 text-center">
+            <Cloud className="w-12 h-12 mx-auto mb-4 text-purple-600 animate-spin-slow" />
+            <h3 className="text-xl font-semibold mb-2">Responsible AI & Ethics</h3>
+            <p className="text-muted-foreground">
+            Ensure trust at scale. We embed fairness, transparency, and compliance into every AI capability.            </p>
+          </CardContent>
+        </Card>
+
+        <Card ref={fadeCard3.ref} style={fadeCard3.style}>
+          <CardContent className="p-6 text-center">
+            <Cloud className="w-12 h-12 mx-auto mb-4 text-purple-600 animate-spin-slow" />
+            <h3 className="text-xl font-semibold mb-2">AI-Powered Decisioning</h3>
+            <p className="text-muted-foreground">
+            From predictive insights to autonomous decision systems, we help you reimagine decisions with intelligence at the core.            </p>
           </CardContent>
         </Card>
       </div>

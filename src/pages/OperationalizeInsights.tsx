@@ -11,47 +11,47 @@ const OperationalizeInsights = () => {
 
       {/* Header */}
       <h1 className="text-4xl font-bold text-center mb-6 bg-gradient-primary bg-clip-text text-transparent">
-        Turn insights into action across the enterprise
+        Operationalize Insights into Intelligent Action
       </h1>
 
       <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
-        Analytics delivers value only when it’s embedded in decisions and workflows. We bring together design thinking, engineering, and automation to operationalize intelligence.
+        We move beyond dashboards. By operationalizing insights into AI-powered decision systems, we enable adaptive enterprises that learn and act in real time.
       </p>
 
       {/* Cards */}
       <div className="grid md:grid-cols-4 gap-6">
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Experience Consulting</h3>
+            <h3 className="text-xl font-semibold mb-2">Reimagine Experiences with AI</h3>
             <p className="text-muted-foreground">
-              Design intuitive, AI-powered experiences that improve customer and employee engagement.
+              We design AI-powered interactions that personalize journeys, boost engagement, and make every customer and employee touchpoint intelligent and adaptive.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Application Engineering</h3>
+            <h3 className="text-xl font-semibold mb-2">Engineer Intelligent Applications</h3>
             <p className="text-muted-foreground">
-              Build intelligent apps that combine AI with business processes for seamless operations.
+              From process automation to decisioning, we build applications with AI at the core — making business operations smarter, faster, and more seamless.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Business Intelligence</h3>
+            <h3 className="text-xl font-semibold mb-2">Evolve from BI to AI-Powered Decisioning</h3>
             <p className="text-muted-foreground">
-              Enable real-time dashboards, KPIs, and reporting systems that support everyday decision-making.
+              Move beyond dashboards. We operationalize insights into adaptive decision systems that act in real time and continuously learn from outcomes.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">ML Ops</h3>
+            <h3 className="text-xl font-semibold mb-2">Operationalize AI with MLOps</h3>
             <p className="text-muted-foreground">
-              Automate the lifecycle of machine learning models — from training to monitoring — to keep insights production-ready.
+              Ensure your models deliver value at scale. We automate the entire ML lifecycle — from training to monitoring — so insights stay reliable, ethical, and production-ready.
             </p>
           </CardContent>
         </Card>
@@ -59,14 +59,14 @@ const OperationalizeInsights = () => {
 
       {/* Bottom text */}
       <p className="text-center text-lg mt-12 text-muted-foreground">
-        By embedding intelligence into core operations, we help organizations move from insight to impact at scale.
+        We embed AI into the fabric of your operations — turning data into intelligence, and intelligence into measurable impact at enterprise scale.
       </p>
 
       {/* CTA button */}
       <div className="flex justify-center mt-8">
         <Link to="/contact">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-            Schedule Consultation
+            Start Your AI Journey
           </Button>
         </Link>
       </div>

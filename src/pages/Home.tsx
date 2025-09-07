@@ -12,26 +12,25 @@ const Home = () => {
   <div className="relative max-w-7xl mx-auto text-center">
     <div className="mb-8">
       <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-snug">
-        Transforming Business with{" "}
+        Reimagine Your Business with{" "}
         <span className="bg-gradient-primary bg-clip-text text-transparent">
-          AI Innovation
+          AI at the Core
         </span>
       </h1>
       <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-        iGenie Labs empowers organizations with cutting-edge AI solutions,
-        strategic advisory services, and rapid product development to drive
-        digital transformation and accelerate growth.
+        We help enterprises go beyond digital transformation by embedding intelligence into every product, process, and experience. From strategy 
+        to scalable AI platforms, we accelerate innovation and deliver measurable impact.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link to="/products">
           <Button size="lg" className="group">
-            Explore Products
+            Explore AI Solutions
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
         </Link>
         <Link to="/services">
           <Button variant="outline" size="lg">
-            Our Services
+            See How We Help
           </Button>
         </Link>
       </div>
@@ -59,7 +58,7 @@ const Home = () => {
                 <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">AI-First Solutions</h3>
                 <p className="text-muted-foreground">
-                  Build smarter products and experiences with AI.
+                  We design solutions where AI is not an add-on but the foundation — creating smarter products, hyper-personalized experiences, and intelligent ecosystems.
                 </p>
               </CardContent>
             </Card>
@@ -69,7 +68,7 @@ const Home = () => {
                 <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Rapid Delivery</h3>
                 <p className="text-muted-foreground">
-                  Agile execution for faster time-to-market.
+                  With our agile AI delivery model, you see working prototypes in weeks, not months. Speed to value without sacrificing scale.
                 </p>
               </CardContent>
             </Card>
@@ -79,7 +78,7 @@ const Home = () => {
                 <Target className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Strategic Advisory</h3>
                 <p className="text-muted-foreground">
-                  Align AI with business outcomes.
+                  Our experts blend strategy and execution, ensuring AI investments deliver measurable ROI tied to your core business goals.
                 </p>
               </CardContent>
             </Card>
@@ -101,7 +100,7 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Strategy & Advisory</h3>
               <p className="text-muted-foreground mb-4">
-                Roadmaps & platform strategies.
+                Design AI roadmaps that connect vision to measurable business outcomes.
               </p>
               <Link to="/strategyadvisory">
                 <Button variant="link" className="text-primary">
@@ -113,7 +112,7 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Engineer Your Data</h3>
               <p className="text-muted-foreground mb-4">
-                Modernize and scale your data.
+                Build AI-ready data platforms with governance, scalability, and real-time access.
               </p>
               <Link to="/engineerdata">
                 <Button variant="link" className="text-primary">
@@ -125,7 +124,7 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Differentiate AI-ML</h3>
               <p className="text-muted-foreground mb-4">
-                Create value with AI & ML.
+                Create breakthrough products and services with AI/ML at the core.
               </p>
               <Link to="/DifferentiateAI">
                 <Button variant="link" className="text-primary">
@@ -137,7 +136,7 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Operationalize Insights</h3>
               <p className="text-muted-foreground mb-4">
-                Scale analytics & AI in workflows.
+                Turn analytics into action by embedding AI into everyday decisions and workflows.
               </p>
               <Link to="/operationalizeinsights">
                 <Button variant="link" className="text-primary">
@@ -184,13 +183,13 @@ const Home = () => {
                   <h3 className="text-xl font-semibold">Travel Genie</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Intelligent travel planning powered by AI to create personalized itineraries, find the best deals, and optimize your journey.
+                  Personalized travel powered by AI — plan smarter, save money, and unlock seamless journeys.
                 </p>
                 <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Smart itinerary generation</li>
-                  <li>Real-time price optimization</li>
-                  <li>Personalized recommendations</li>
-                  <li>Multi-language support</li>
+                  <li>AI-driven itinerary creation</li>
+                  <li>Dynamic price intelligence</li>
+                  <li>Personalized travel insights</li>
+                  <li>Global multi-language support</li>
                 </ul>
               </CardContent>
             </Card>
@@ -219,13 +218,13 @@ const Home = () => {
                   <h3 className="text-xl font-semibold">Audio Genie</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Revolutionary audio management system that uses AI to organize, categorize, and enhance your audio content.
+                  Turn chaos into clarity. AI organizes, enhances, and surfaces the right audio content instantly.
                 </p>
                 <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Automated audio categorization</li>
-                  <li>AI-powered search</li>
-                  <li>Quality enhancement</li>
-                  <li>Smart playlist creation</li>
+                  <li>Automatic content tagging & categorization</li>
+                  <li>Semantic AI-powered search</li>
+                  <li>Studio-grade audio enhancement</li>
+                  <li>Context-aware playlist generation</li>
                 </ul>
               </CardContent>
             </Card>
@@ -254,13 +253,13 @@ const Home = () => {
                   <h3 className="text-xl font-semibold">Workflow Genie</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Streamline your business processes with AI-driven workflow automation that learns from your patterns.
+                  Let AI handle the busy work. Automate, optimize, and scale business processes effortlessly.
                 </p>
                 <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Process automation</li>
-                  <li>Intelligent routing</li>
-                  <li>Performance analytics</li>
-                  <li>Custom integrations</li>
+                  <li>End-to-end process automation</li>
+                  <li>Adaptive Intelligent routing</li>
+                  <li>Real-time Performance insights</li>
+                  <li>Seamless integrations with enterprise tools</li>
                 </ul>
               </CardContent>
             </Card>
@@ -273,14 +272,14 @@ const Home = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Business?
+            Ready to Lead in the AI Economy?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss how our AI solutions and advisory services can accelerate your growth.
+            Whether you’re just starting or scaling enterprise-wide, we partner with you to make AI your competitive edge.
           </p>
           <Link to="/contact">
             <Button size="lg" className="shadow-glow">
-              Get Started Today
+              Start Your AI Journey
             </Button>
           </Link>
         </div>

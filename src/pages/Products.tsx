@@ -9,36 +9,36 @@ const Products = () => {
       icon: MapPin,
       title: "Travel Genie",
       description:
-        "Intelligent travel planning powered by AI to create personalized itineraries, find the best deals, and optimize your journey from start to finish.",
+        "Your personal AI travel companion. Travel Genie creates hyper-personalized itineraries, finds the best deals in real-time, and ensures every journey is smarter, smoother, and more rewarding.",
       features: [
-        "Smart itinerary generation",
-        "Real-time price optimization",
-        "Personalized recommendations",
-        "Multi-language support",
+        "AI-driven itinerary creation",
+        "Dynamic price intelligence",
+        "Personalized travel insights",
+        "Global multi-language support",
       ],
     },
     {
       icon: Music,
       title: "Audio Genie",
       description:
-        "Revolutionary audio management system that uses AI to organize, categorize, and enhance your audio content with intelligent search and discovery.",
+        "Turn noise into knowledge. Audio Genie uses AI to organize, enhance, and uncover insights from your audio content — making discovery and creativity effortless.",
       features: [
-        "Automated audio categorization",
-        "AI-powered search",
-        "Quality enhancement",
-        "Smart playlist creation",
+        "Automatic content tagging & categorization",
+        "Semantic AI-powered search",
+        "Studio-grade audio enhancement",
+        "Context-aware playlist generation",
       ],
     },
     {
       icon: Workflow,
       title: "Workflow Genie",
       description:
-        "Streamline your business processes with AI-driven workflow automation that learns from your patterns and optimizes operations in real-time.",
+        "Your AI co-pilot for business efficiency. Workflow Genie learns from patterns, automates repetitive tasks, and continuously optimizes operations in real time.",
       features: [
-        "Process automation",
-        "Intelligent routing",
-        "Performance analytics",
-        "Custom integrations",
+        "End-to-end process automation",
+        "Adaptive intelligent routing",
+        "Real-time performance insights",
+        "Seamless integrations with enterprise tools",
       ],
     },
   ];
@@ -49,14 +49,13 @@ const Products = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Our AI-Powered{" "}
+            AI Products That Redefine{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Products
+              Work, Travel, and Creativity
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover our suite of innovative AI applications designed to
-            transform how you work, travel, and manage digital content.
+            Each iGenie Labs product is AI-first by design — built to unlock new value, simplify complexity, and transform everyday tasks into intelligent experiences.
           </p>
         </div>
       </section>
@@ -110,17 +109,17 @@ const Products = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Experience Our AI Solutions?
+            Ready to See AI in Action?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Contact us to learn more about our products and how they can
-            transform your business.
+            Experience how our AI-first products deliver measurable impact. 
+            From smarter travel to automated workflows, the future of work and life starts here.
           </p>
 
           {/* 👇 Wrap button with Link */}
           <Link to="/contact">
             <Button size="lg" className="shadow-glow">
-              Request Demo
+              Experience It Now
             </Button>
           </Link>
         </div>
