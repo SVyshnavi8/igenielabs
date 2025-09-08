@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import ExpertiseTabs from "@/components/ExpertiseTabs";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 // 👇 Import icons from lucide-react
 import {
@@ -24,6 +26,23 @@ import {
 } from "lucide-react";
 
 const Capabilities = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+  if (!location.hash) return;
+  // remove leading '#' from hash
+  const id = location.hash.replace("#", "");
+  // small timeout to allow layout/anchor positioning if necessary
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      // optional: adjust for fixed header offset if needed
+      // window.scrollBy(0, -80);
+    }
+  }, 50);
+}, [location]);
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
       {/* Tabs at the top */}
@@ -49,7 +68,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Chart your AI journey with clarity and confidence — from quick wins to enterprise transformation.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI & analytics maturity assessments</li>
                 <li>Value-driven adoption roadmaps</li>
@@ -67,7 +86,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 From governance to real-time pipelines — we make your data trustworthy, scalable, and ready for intelligence.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI-ready data strategy & semantic models</li>
                 <li>Governance & compliance frameworks</li>
@@ -85,7 +104,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Scalable, cloud-agnostic ecosystems optimized for model training, deployment, and continuous learning.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI-native cloud architectures & lakehouse enablement</li>
                 <li>MLOps & model lifecycle management</li>
@@ -106,7 +125,7 @@ const Capabilities = () => {
                 <p className="text-muted-foreground">
                   Ensure trust at scale by embedding fairness, transparency, and compliance across your AI footprint.
                 </p>
-                <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+                <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
                 <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                   <li>Ethical AI frameworks & policy design</li>
                   <li>Bias monitoring and mitigation</li>
@@ -124,7 +143,7 @@ const Capabilities = () => {
                 <p className="text-muted-foreground">
                   Reimagine decisions with intelligence — from forecasting to autonomous decision systems.
                 </p>
-                <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+                <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
                 <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                   <li>AI-driven forecasting & predictive insights</li>
                   <li>Personalization & recommendation engines</li>
@@ -170,7 +189,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Transform legacy systems into AI-ready, cloud-native platforms for agility and efficient AI workloads.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI-native cloud migration strategies</li>
                 <li>Data lakehouse & modern warehouse enablement</li>
@@ -188,7 +207,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Lay the groundwork for intelligence with standardized models, governance, and quality frameworks.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI-quality data & semantic modeling</li>
                 <li>Governance & compliance controls</li>
@@ -206,7 +225,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Automate pipelines and monitoring with AI-driven DataOps practices to enable continuous learning systems.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>Self-healing, automated data pipelines</li>
                 <li>ML-powered monitoring & anomaly detection</li>
@@ -252,7 +271,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Transform raw data into intelligence with predictive, prescriptive and personalization models.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>Predictive & prescriptive modeling for outcomes</li>
                 <li>Recommendation engines & personalization</li>
@@ -270,7 +289,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Move models from prototype to production with reliability, governance, and observability built in.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>MLOps pipelines for CI/CD of models</li>
                 <li>Model monitoring, drift detection & retraining</li>
@@ -288,7 +307,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Accelerate adoption by delivering reusable modules, APIs, and centralized platforms for self-service AI.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>Reusable AI modules & production-ready APIs</li>
                 <li>Centralized ML platforms enabling self-service</li>
@@ -334,7 +353,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Design AI-powered interactions that personalize journeys and make touchpoints adaptive.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>Personalized customer journeys powered by AI/LLMs</li>
                 <li>Intelligent employee assistants & copilots</li>
@@ -352,7 +371,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Build applications with AI at the core — making operations smarter, faster, and more seamless.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI-infused workflows & business apps</li>
                 <li>Process automation & optimization with intelligence</li>
@@ -370,7 +389,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Move beyond dashboards — operationalize insights into adaptive decision systems.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>AI-driven forecasting & prescriptive analytics</li>
                 <li>Decision automation engines</li>
@@ -388,7 +407,7 @@ const Capabilities = () => {
               <p className="text-muted-foreground">
                 Automate the ML lifecycle so models remain reliable, ethical, and production-ready.
               </p>
-              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left">Outcomes</h4>
+              <h4 className="text-md font-semibold mt-4 mb-2 text-foreground text-left"></h4>
               <ul className="text-muted-foreground text-left list-disc list-inside space-y-1">
                 <li>Automated pipelines for training, testing & deployment</li>
                 <li>Model monitoring, drift detection & retraining workflows</li>

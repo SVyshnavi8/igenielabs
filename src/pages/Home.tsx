@@ -1,3 +1,4 @@
+// src/pages/Home.tsx
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -7,37 +8,36 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-background pt-28">
       {/* Hero Section */}
-  <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-hero opacity-50" />
-  <div className="relative max-w-7xl mx-auto text-center">
-    <div className="mb-8">
-      <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-snug">
-        Reimagine Your Business with{" "}
-        <span className="bg-gradient-primary bg-clip-text text-transparent">
-          AI at the Core
-        </span>
-      </h1>
-      <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-        We help enterprises go beyond digital transformation by embedding intelligence into every product, process, and experience. From strategy 
-        to scalable AI platforms, we accelerate innovation and deliver measurable impact.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Link to="/products">
-          <Button size="lg" className="group">
-            Explore AI Solutions
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-        </Link>
-        <Link to="/services">
-          <Button variant="outline" size="lg">
-            See How We Help
-          </Button>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-hero opacity-50" />
+        <div className="relative max-w-7xl mx-auto text-center">
+          <div className="mb-8">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-snug">
+              Reimagine Your Business with{" "}
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                AI at the Core
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
+              We help enterprises go beyond digital transformation by embedding intelligence into every product, process, and experience. From strategy 
+              to scalable AI platforms, we accelerate innovation and deliver measurable impact.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/products">
+                <Button size="lg" className="group">
+                  Explore AI Solutions
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button variant="outline" size="lg">
+                  See How We Help
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose iGenie Labs */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -101,10 +101,13 @@ const Home = () => {
               <p className="text-muted-foreground mb-4">
                 Design AI roadmaps that connect vision to measurable business outcomes.
               </p>
-              <Link to="/strategyadvisory">
-                <Button variant="link" className="text-primary">
-                  Learn more →
-                </Button>
+
+              {/*
+                Use a Link that includes the hash to navigate to the Capabilities page and jump to the
+                #strategyadvisory anchor. React Router v6 supports objects for `to`.
+              */}
+              <Link to="/capabilities#strategyadvisory">
+              <Button variant="link" className="text-primary">Learn more →</Button>
               </Link>
             </Card>
 
@@ -113,10 +116,9 @@ const Home = () => {
               <p className="text-muted-foreground mb-4">
                 Build AI-ready data platforms with governance, scalability, and real-time access.
               </p>
-              <Link to="/engineerdata">
-                <Button variant="link" className="text-primary">
-                  Learn more →
-                </Button>
+
+              <Link to="/capabilities#engineerdata">
+              <Button variant="link" className="text-primary">Learn more →</Button>
               </Link>
             </Card>
 
@@ -125,10 +127,9 @@ const Home = () => {
               <p className="text-muted-foreground mb-4">
                 Create breakthrough products and services with AI/ML at the core.
               </p>
-              <Link to="/DifferentiateAI">
-                <Button variant="link" className="text-primary">
-                  Learn more →
-                </Button>
+
+              <Link to="/capabilities#differentiateai">
+              <Button variant="link" className="text-primary">Learn more →</Button>
               </Link>
             </Card>
 
@@ -137,17 +138,16 @@ const Home = () => {
               <p className="text-muted-foreground mb-4">
                 Turn analytics into action by embedding AI into everyday decisions and workflows.
               </p>
-              <Link to="/operationalizeinsights">
-                <Button variant="link" className="text-primary">
-                  Learn more →
-                </Button>
+
+              <Link to="/capabilities#operationalizeinsights">
+              <Button variant="link" className="text-primary">Learn more →</Button>
               </Link>
             </Card>
           </div>
         </div>
       </section>
 
-            {/* Latest Products Section */}
+      {/* Latest Products Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -265,7 +265,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero">
