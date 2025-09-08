@@ -26,9 +26,11 @@ import {
 const FeatureList: React.FC<{ items: string[] }> = ({ items }) => (
   <ul className="space-y-2 mt-4">
     {items.map((it, i) => (
-      <li key={i} className="flex items-center text-sm text-muted-foreground">
+      // li is a flex container; add min-w-0 so children can shrink on small screens
+      <li key={i} className="flex items-center text-sm text-muted-foreground min-w-0">
         <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0" />
-        <span>{it}</span>
+        {/* text span gets break-words to wrap long tokens */}
+        <span className="break-words">{it}</span>
       </li>
     ))}
   </ul>
@@ -79,13 +81,16 @@ const Capabilities = () => {
                 Chart your AI journey with clarity and confidence — from quick wins to enterprise transformation.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI & analytics maturity assessments",
-                "Value-driven adoption roadmaps",
-                "AI infusion into business strategy",
-                "Measurable milestones & ROI tracking",
-              ]} />
+            {/* allow card content to shrink by adding min-w-0 */}
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI & analytics maturity assessments",
+                  "Value-driven adoption roadmaps",
+                  "AI infusion into business strategy",
+                  "Measurable milestones & ROI tracking",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -102,13 +107,15 @@ const Capabilities = () => {
                 From governance to real-time pipelines — we make your data trustworthy, scalable, and ready for intelligence.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI-ready data strategy & semantic models",
-                "Governance & compliance frameworks",
-                "Data quality, lineage & observability",
-                "Enterprise metadata management for discovery",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI-ready data strategy & semantic models",
+                  "Governance & compliance frameworks",
+                  "Data quality, lineage & observability",
+                  "Enterprise metadata management for discovery",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -125,13 +132,15 @@ const Capabilities = () => {
                 Scalable, cloud-agnostic ecosystems optimized for model training, deployment, and continuous learning.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI-native cloud architectures & lakehouse enablement",
-                "MLOps & model lifecycle management",
-                "Scalable inference & hybrid/multi-cloud options",
-                "Platform cost/compute optimization for AI workloads",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI-native cloud architectures & lakehouse enablement",
+                  "MLOps & model lifecycle management",
+                  "Scalable inference & hybrid/multi-cloud options",
+                  "Platform cost/compute optimization for AI workloads",
+                ]}
+              />
             </CardContent>
           </Card>
         </div>
@@ -151,13 +160,15 @@ const Capabilities = () => {
                   Ensure trust at scale by embedding transparency, and compliance across your AI footprint.
                 </p>
               </CardHeader>
-              <CardContent className="p-6">
-                <FeatureList items={[
-                  "Ethical AI frameworks & policy design",
-                  "Bias monitoring and mitigation",
-                  "Explainability & model interpretability",
-                  "Governance-ready audits and compliance checks",
-                ]} />
+              <CardContent className="p-6 min-w-0">
+                <FeatureList
+                  items={[
+                    "Ethical AI frameworks & policy design",
+                    "Bias monitoring and mitigation",
+                    "Explainability & model interpretability",
+                    "Governance-ready audits and compliance checks",
+                  ]}
+                />
               </CardContent>
             </Card>
 
@@ -173,13 +184,15 @@ const Capabilities = () => {
                   Reimagine decisions with intelligence — from forecasting to autonomous decision systems.
                 </p>
               </CardHeader>
-              <CardContent className="p-6">
-                <FeatureList items={[
-                  "AI-driven forecasting & predictive insights",
-                  "Personalization & recommendation engines",
-                  "Intelligent automation & decisioning workflows",
-                  "Embedded decision engines for real-time action",
-                ]} />
+              <CardContent className="p-6 min-w-0">
+                <FeatureList
+                  items={[
+                    "AI-driven forecasting & predictive insights",
+                    "Personalization & recommendation engines",
+                    "Intelligent automation & decisioning workflows",
+                    "Embedded decision engines for real-time action",
+                  ]}
+                />
               </CardContent>
             </Card>
           </div>
@@ -224,13 +237,15 @@ const Capabilities = () => {
                 Transform legacy systems into AI-ready, cloud-native platforms for agility and efficient AI workloads.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI-native cloud migration strategies",
-                "Data lakehouse & modern warehouse enablement",
-                "Elastic architectures for training & inference",
-                "Cost-efficient storage & compute optimization",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI-native cloud migration strategies",
+                  "Data lakehouse & modern warehouse enablement",
+                  "Elastic architectures for training & inference",
+                  "Cost-efficient storage & compute optimization",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -246,13 +261,15 @@ const Capabilities = () => {
                 Lay the groundwork for intelligence with standardized models, governance, and quality frameworks.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI-quality data & semantic modeling",
-                "Governance & compliance controls",
-                "Data quality, lineage & observability",
-                "Metadata & cataloging for reuse",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI-quality data & semantic modeling",
+                  "Governance & compliance controls",
+                  "Data quality, lineage & observability",
+                  "Metadata & cataloging for reuse",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -268,13 +285,15 @@ const Capabilities = () => {
                 Automate pipelines and monitoring with AI-driven DataOps practices to enable continuous learning systems.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "Self-healing, automated data pipelines",
-                "ML-powered monitoring & anomaly detection",
-                "Real-time streaming & event-driven processing",
-                "Scalable DataOps frameworks for rapid AI adoption",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "Self-healing, automated data pipelines",
+                  "ML-powered monitoring & anomaly detection",
+                  "Real-time streaming & event-driven processing",
+                  "Scalable DataOps frameworks for rapid AI adoption",
+                ]}
+              />
             </CardContent>
           </Card>
         </div>
@@ -318,13 +337,15 @@ const Capabilities = () => {
                 Transform raw data into intelligence with predictive, prescriptive and personalization models.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "Predictive & prescriptive modeling for outcomes",
-                "Recommendation engines & personalization",
-                "Advanced statistical & ML techniques",
-                "Experimentation & A/B frameworks",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "Predictive & prescriptive modeling for outcomes",
+                  "Recommendation engines & personalization",
+                  "Advanced statistical & ML techniques",
+                  "Experimentation & A/B frameworks",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -340,13 +361,15 @@ const Capabilities = () => {
                 Move models from prototype to production with reliability, governance, and observability built in.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "MLOps pipelines for CI/CD of models",
-                "Model monitoring, drift detection & retraining",
-                "Responsible AI guardrails & explainability",
-                "Production-grade, high-availability AI architectures",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "MLOps pipelines for CI/CD of models",
+                  "Model monitoring, drift detection & retraining",
+                  "Responsible AI guardrails & explainability",
+                  "Production-grade, high-availability AI architectures",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -362,13 +385,15 @@ const Capabilities = () => {
                 Accelerate adoption by delivering reusable modules, APIs, and centralized platforms for self-service AI.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "Reusable AI modules & production-ready APIs",
-                "Centralized ML platforms enabling self-service",
-                "Enterprise marketplaces for AI components",
-                "Scalable ecosystems to power multiple use cases",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "Reusable AI modules & production-ready APIs",
+                  "Centralized ML platforms enabling self-service",
+                  "Enterprise marketplaces for AI components",
+                  "Scalable ecosystems to power multiple use cases",
+                ]}
+              />
             </CardContent>
           </Card>
         </div>
@@ -411,13 +436,15 @@ const Capabilities = () => {
                 Design AI-powered interactions that personalize journeys and make touchpoints adaptive.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "Personalized customer journeys with AI/LLMs",
-                "Intelligent employee assistants & copilots",
-                "Conversational AI: chatbots, voice & multimodal",
-                "Experience analytics for continuous improvement",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "Personalized customer journeys with AI/LLMs",
+                  "Intelligent employee assistants & copilots",
+                  "Conversational AI: chatbots, voice & multimodal",
+                  "Experience analytics for continuous improvement",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -433,13 +460,15 @@ const Capabilities = () => {
                 Build applications with AI at the core — making operations smarter, faster, and more seamless.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI-infused workflows & business apps",
-                "Process automation & optimization with intelligence",
-                "Embedded AI in SaaS & custom applications",
-                "Low-code / no-code accelerators for rapid adoption",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI-infused workflows & business apps",
+                  "Process automation & optimization with intelligence",
+                  "Embedded AI in SaaS & custom applications",
+                  "Low-code / no-code accelerators for rapid adoption",
+                ]}
+              />
             </CardContent>
           </Card>
 
@@ -455,13 +484,15 @@ const Capabilities = () => {
                 Move beyond dashboards — operationalize insights into adaptive decision systems.
               </p>
             </CardHeader>
-            <CardContent className="p-6">
-              <FeatureList items={[
-                "AI-driven forecasting & prescriptive analytics",
-                "Decision automation engines",
-                "Real-time KPI monitoring & performance alerts",
-                "Closed-loop systems with learning feedback",
-              ]} />
+            <CardContent className="p-6 min-w-0">
+              <FeatureList
+                items={[
+                  "AI-driven forecasting & prescriptive analytics",
+                  "Decision automation engines",
+                  "Real-time KPI monitoring & performance alerts",
+                  "Closed-loop systems with learning feedback",
+                ]}
+              />
             </CardContent>
           </Card>
         </div>
@@ -481,13 +512,15 @@ const Capabilities = () => {
                   Automate the ML lifecycle so models remain reliable, ethical, and production-ready.
                 </p>
               </CardHeader>
-              <CardContent className="p-6">
-                <FeatureList items={[
-                  "Automated pipelines for training, testing & deployment",
-                  "Model monitoring, drift detection & retraining workflows",
-                  "Compliance-ready governance for AI at scale",
-                  "Continuous delivery of AI/ML in production",
-                ]} />
+              <CardContent className="p-6 min-w-0">
+                <FeatureList
+                  items={[
+                    "Automated pipelines for training, testing & deployment",
+                    "Model monitoring, drift detection & retraining workflows",
+                    "Compliance-ready governance for AI at scale",
+                    "Continuous delivery of AI/ML in production",
+                  ]}
+                />
               </CardContent>
             </Card>
           </div>
